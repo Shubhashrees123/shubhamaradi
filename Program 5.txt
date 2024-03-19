@@ -1,0 +1,67 @@
+Program:
+package java22scheme;
+public class Shape {
+public void draw() {
+ System.out.println("Drawing shape");
+ }
+ public void erase() {
+ System.out.println("Erasing shape");
+ }
+}
+package java22scheme;
+public class Circle extends Shape{
+@Override
+ public void draw() {
+ System.out.println("Drawing Circle");
+ }
+ @Override
+JAVA LAB MANUAL BCS306A
+Dept. of ISE,AIT Page 13
+ public void erase() {
+ System.out.println("Erasing Circle");
+ }
+}
+package java22scheme;
+public class Triangle extends Shape{
+@Override
+ public void draw() {
+ System.out.println("Drawing Triangle");
+ }
+ @Override
+ public void erase() {
+ System.out.println("Erasing Triangle");
+ }
+}
+package java22scheme;
+public class Square extends Shape
+{
+@Override
+ public void draw() {
+ System.out.println("Drawing Square");
+ }
+ @Override
+ public void erase() {
+ System.out.println("Erasing Square");
+ }
+}
+package java22scheme;
+public class Main {
+public static void main(String[] args) {
+ Shape shape1 = new Circle();
+ Shape shape2 = new Triangle();
+ Shape shape3 = new Square();
+ shape1.draw();
+ shape1.erase();
+ shape2.draw();
+ shape2.erase();
+ shape3.draw();
+JAVA LAB MANUAL BCS306A
+Dept. of ISE,AIT Page 14
+ shape3.erase();
+ }}
+Output:
+Program 6:
+Develop a JAVA program to create an abstract class Shape with abstract 
+methods calculateArea() and calculatePerimeter(). Create subclasses Circle 
+and Triangle that extend the Shape class and implement the respective 
+methods to calculate the area and perimeter of each sh
